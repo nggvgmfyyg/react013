@@ -1,38 +1,52 @@
-.App {
+.heading{
+  background-color: rgb(54, 164, 54);
   text-align: center;
+  padding:1rem 0px;
+  font-weight: bold;
+  font-size: 2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add-item{
+  background-color: rgb(214, 223, 214);
 }
+.add-item div{
+  margin:1rem 0;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-item label{
+  display: block;
+}
+.add-item input,.add-item select{
+  height:100%;
+  width:100%;
+}
+.btn{
+  border: none;
+  border-radius: 20%;
+  background-color: rgb(186, 150, 150);
+  margin-left: 50%;
+  padding: 1rem ;
+}
+.item{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.item>div{
+  flex:1;
+  text-align: center;
+  margin: 0.5rem 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item:nth-child(even){
+  background-color:  rgb(159, 141, 174);
+}
+.footer{
+  position: fixed;
+  right: 0;
+  left:0;
+  bottom: 0;
+  padding: 2rem 0px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(214, 223, 214);
 }
